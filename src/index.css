@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Search Assistant Design System - Dark Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark theme base colors */
+    --background: 0 0% 5.1%; /* #0d0d0d */
+    --foreground: 0 0% 100%; /* #ffffff */
+
+    --card: 0 0% 7.1%; /* #121212 */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 7.1%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Cyan accent system */
+    --primary: 188 100% 42%; /* #00bcd4 */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 188 100% 50%;
+
+    --secondary: 0 0% 11%; /* #1c1c1c */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 7.1%;
+    --muted-foreground: 215 15% 65%; /* #9ca3af */
+
+    --accent: 188 100% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 11%; /* #1c1c1c */
+    --ring: 188 100% 42%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 7.1%; /* #121212 */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 188 100% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 9%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 188 100% 42%;
+
+    /* Custom design tokens */
+    --search-glow: 188 100% 42% / 0.2;
+    --hover-accent: 188 100% 50% / 0.1;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-elegant: 0 4px 20px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  /* Light theme overrides if needed - keeping dark as primary */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter overflow-hidden;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  .search-input-glow {
+    @apply focus-within:shadow-[0_0_20px_hsl(var(--primary)/0.3)] transition-shadow duration-300;
+  }
+
+  .nav-item-hover {
+    @apply hover:bg-[hsl(var(--hover-accent))] transition-colors duration-200;
+  }
+
+  .brand-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+  }
+}
