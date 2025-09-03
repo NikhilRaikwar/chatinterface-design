@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 0 0% 7.1%;
     --popover-foreground: 0 0% 100%;
 
-    /* Cyan accent system */
-    --primary: 188 100% 42%; /* #00bcd4 */
+    /* Warm orange accent system */
+    --primary: 18 63% 56%; /* #d97745 */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 188 100% 50%;
+    --primary-glow: 18 63% 64%; /* #e28557 */
 
     --secondary: 0 0% 11%; /* #1c1c1c */
     --secondary-foreground: 0 0% 100%;
@@ -29,7 +29,7 @@ All colors MUST be HSL.
     --muted: 0 0% 7.1%;
     --muted-foreground: 215 15% 65%; /* #9ca3af */
 
-    --accent: 188 100% 42%;
+    --accent: 18 63% 56%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -37,23 +37,23 @@ All colors MUST be HSL.
 
     --border: 0 0% 15%;
     --input: 0 0% 11%; /* #1c1c1c */
-    --ring: 188 100% 42%;
+    --ring: 18 63% 56%;
 
     --radius: 0.75rem;
 
     /* Sidebar colors */
     --sidebar-background: 0 0% 7.1%; /* #121212 */
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 188 100% 42%;
+    --sidebar-primary: 18 63% 56%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 9%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 188 100% 42%;
+    --sidebar-ring: 18 63% 56%;
 
     /* Custom design tokens */
-    --search-glow: 188 100% 42% / 0.2;
-    --hover-accent: 188 100% 50% / 0.1;
+    --search-glow: 18 63% 56% / 0.2;
+    --hover-accent: 18 63% 56% / 0.1;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-elegant: 0 4px 20px hsl(0 0% 0% / 0.5);
     --shadow-glow: 0 0 20px hsl(var(--primary) / 0.3);
