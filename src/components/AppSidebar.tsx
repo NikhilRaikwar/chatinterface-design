@@ -1,10 +1,10 @@
 import { 
   Plus,
   MessageSquare,
-  Coffee,
   Settings,
   User,
-  Menu
+  SidebarOpen,
+  SidebarClose
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -19,7 +19,6 @@ import {
 const navItems = [
   { title: "New Chat", url: "/", icon: Plus },
   { title: "Discover", url: "/discover", icon: MessageSquare },
-  { title: "Spaces", url: "/spaces", icon: Coffee },
   { title: "Settings", url: "/settings", icon: Settings },
 ];
 
@@ -34,14 +33,18 @@ export function AppSidebar() {
     <Sidebar className={`${isExpanded ? 'w-64' : 'w-16'} border-r border-border/20 bg-card transition-all duration-300 ease-in-out`}>
       <SidebarContent className="flex flex-col h-full py-4">
         {/* Toggle Button */}
-        <div className="flex justify-center mb-4">
+        <div className={`flex ${isExpanded ? 'justify-end px-4' : 'justify-center'} mb-4`}>
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setIsExpanded(!isExpanded)}
             className="text-muted-foreground hover:text-foreground hover:bg-accent h-10 w-10 p-0 rounded-lg transition-colors duration-200"
           >
-            <Menu className="h-5 w-5" />
+            {isExpanded ? (
+              <SidebarClose className="h-5 w-5" />
+            ) : (
+              <SidebarOpen className="h-5 w-5" />
+            )}
           </Button>
         </div>
 
