@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@source "../node_modules/streamdown/dist/index.js";
+
 /* AI Search Assistant Design System - Dark Theme
 All colors MUST be HSL.
 */
