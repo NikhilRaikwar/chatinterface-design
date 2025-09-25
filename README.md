@@ -25,6 +25,6 @@ ChatUI is a modern **user interface for chat applications**, designed with simpl
 - **Styling**: Tailwind CSS  
 - **Backend**: Node.js (planned)  
 - **Database**: SupaBase / PostgreSQL (planned)
-- **LLM**: OpenAI  
+- **LLM**: OpenAI / Anthropic
 
 ---
